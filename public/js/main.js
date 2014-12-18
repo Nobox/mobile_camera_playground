@@ -1,7 +1,3 @@
-console.log('testing...');
-console.log('doing some noob shit...');
-
-
 function hasGetUserMedia() {
     return !!(navigator.hasGetUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
 }
@@ -23,7 +19,6 @@ function sizeCanvas() {
 }
 
 function changeFilter(e) {
-    console.log('changing the fiiiiiilter...');
     var el = e.target;
     el.className = '';
     var effect = filters[idx++ % filters.length];
@@ -52,7 +47,7 @@ var filters = [
 ];
 
 var errorCallback = function(e) {
-    console.log('Reeeejected!', e);
+    // errors...
 };
 
 if(hasGetUserMedia()) {
